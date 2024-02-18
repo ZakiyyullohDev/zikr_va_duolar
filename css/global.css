@@ -1,0 +1,238 @@
+@font-face {
+    font-family: arabic;
+    src: url(/fonts/arabic/IBMPlexSansArabic-Regular.ttf);
+}
+@font-face {
+    font-family: rubichka;
+    src: url(/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: messi;
+    src: url(/fonts/messi/ElMessiri-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: noto;
+    src: url(../fonts/Noto_Naskh_Arabic/NotoNaskhArabic-VariableFont_wght.ttf);
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: messi;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #222;
+    color: #222;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bismi {
+    color: #fff;
+    text-align: center;
+    font-family: arabic;
+    padding-bottom: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hello {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.head-top {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-a img {
+    display: block;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+
+.logo-a img:hover {
+    border-radius: 0;
+}
+
+.head-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.head-li {
+    margin-right: 20px;
+}
+
+.head-li:last-child {
+    margin-right: 0;
+}
+
+.head-li-a {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.head-li-a:hover {
+    color: #ffffffb4;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 3px solid #fff;
+}
+
+.dua-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dua {
+    width: 1000px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    font-family: rubichka;
+    background-color: #ffffffeb;
+    text-shadow: 1px 1px 17px #000;
+    box-shadow: 0px 0px 7px 2px white, 0px 0px 10px 2px blue;
+    /* background-color: rgba(255, 255, 255, 0.600 ); */
+}
+
+.copy-dua {
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid #222;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.dua-name {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.dua-text {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: noto;
+}
+
+.foot-top {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.foot-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.foot-li {
+    margin-right: 20px;
+}
+
+.foot-li:last-child {
+    margin-right: 0;
+}
+
+.foot-li-a {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.foot-li-a:hover {
+    color: #ffffffb4;
+}
+
+.all-rights {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
