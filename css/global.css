@@ -38,7 +38,7 @@ body {
     font-family: messi;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #222;
+    background-color: #fff;
     color: #222;
     
 }
@@ -48,15 +48,16 @@ img {
     height: auto;
 }
 
-.visually-hidden {
-    position: absolute;
+.display-none {
+    /* position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
     clip: rect(0 0 0 0);
-    overflow: hidden;
+    overflow: hidden; */
+    display: none;
 }
 
 .container {
@@ -67,8 +68,16 @@ img {
     margin-right: auto;
 }
 
+.bismi-div {
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
 .bismi {
-    color: #fff;
+    color: #000;
     text-align: center;
     font-family: arabic;
     padding-bottom: 100px;
@@ -91,13 +100,15 @@ img {
 }
 
 .logo-a img {
+    user-select: none;
     display: block;
     border-radius: 50%;
-    transition: all 1s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    box-shadow: 0px 0px 10px 6px rgba(170,87,255,1),0px 0px 5px 6px rgba(4,0,255,1);
 }
 
-.logo-a img:hover {
-    border-radius: 0;
+.logo-a:hover.logo-a img {
+    border-radius: 40px;
 }
 
 .head-ul {
@@ -118,14 +129,16 @@ img {
 }
 
 .head-li-a {
-    color: #fff;
+    color: #000;
     font-size: 22px;
+    font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
 .head-li-a:hover {
-    color: #ffffffb4;
+    opacity: 50%;
+    color: blue;
 }
 
 .hero {
@@ -149,43 +162,72 @@ img {
 .dua {
     width: 1000px;
     padding: 20px;
+    cursor: pointer;
     position: relative;
     text-align: center;
     border-radius: 15px;
     margin-bottom: 30px;
     font-family: rubichka;
-    background-color: #ffffffeb;
-    text-shadow: 1px 1px 17px #000;
-    box-shadow: 0px 0px 7px 2px white, 0px 0px 10px 2px blue;
-    /* background-color: rgba(255, 255, 255, 0.600 ); */
+    background: rgb(170,87,255);
+    background: linear-gradient(220deg, rgba(170,87,255,1) 16%, rgba(4,0,255,1) 100%);
+    box-shadow: 0px 0px 10px 6px rgba(170,87,255,1),0px 0px 5px 6px rgba(4,0,255,1);
+}
+
+.dua img {
+    user-select: none;
 }
 
 .copy-dua {
     top: 10px;
     right: 10px;
+    width: 110px;
+    height: 40px;
+    color: #fff;
     padding: 10px;
     cursor: pointer;
     font-size: 15px;
     font-weight: 700;
     position: absolute;
     border-radius: 15px;
-    border: 2px solid #222;
+    border: 2px solid #fff;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.copy-dua:hover {
+    color: rgba(170,87,255,1);
+    border-radius: 0;
+    background-color: #fff;
 }
 
 .dua-name {
-    color: #000;
-    font-size: 20px;
+    color: #fff;
+    font-size: 24px;
     font-weight: 500;
-    margin-bottom: 20px;
 }
 
 .dua-text {
+    font-size: 21px;
     font-weight: 500;
-    font-size: 18px;
+    color: #fff;
     font-family: noto;
+    padding-bottom: 20px;
+}
+
+.numbers-zikr {
+    padding: 10px;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.numbers-zikr:hover {
+    color: blue;
+    border-radius: 0;
+    background-color: #fff;
 }
 
 .foot-top {
@@ -202,9 +244,14 @@ img {
     margin: 0;
     padding: 0;
     display: flex;
+    margin-right: 20px;
     align-items: center;
     list-style-type: none;
     justify-content: center;
+}
+
+.foot-ul:last-child {
+    margin-right: 0;
 }
 
 .foot-li {
@@ -216,18 +263,19 @@ img {
 }
 
 .foot-li-a {
-    color: #fff;
+    color: #000;
     font-size: 22px;
+    font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
 .foot-li-a:hover {
-    color: #ffffffb4;
+    opacity: 50%;
 }
 
 .all-rights {
-    color: #fff;
+    color: #000;
     font-size: 24px;
     font-weight: 600;
     padding-top: 20px;

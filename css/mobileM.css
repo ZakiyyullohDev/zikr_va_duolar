@@ -1,0 +1,9 @@
+@media (max-width: 375px) {
+    .dua {
+        max-width: 345px;
+    }
+
+    .copy-dua {
+        right: 100px;
+    }
+}

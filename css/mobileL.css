@@ -1,0 +1,56 @@
+@media (max-width: 426px) {
+
+    .head-top {
+        display: block;
+        text-align: center;
+    }
+
+    .head-ul {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+
+    .head-ul:last-child{
+        margin-bottom: 0;
+    }
+
+    .bismi-div img {
+        width: 350px;
+    }
+
+    .dua {
+        max-width: 380px;
+        height: 421px;
+    }
+
+    .dua-text {
+        padding-bottom: 40px;
+    }
+    
+    .copy-dua {
+        top: 370px;
+        right: 130px;
+    }
+
+    .foot-ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: space-around; */
+    }
+
+    .foot-li {
+        max-height: 67px;
+        margin-right: 0;
+    }
+    
+    .foot-li-a {
+        width: 155px;
+    }
+
+    .foot-li-a:last-child {
+        font-size: 20px;
+    }
+
+}

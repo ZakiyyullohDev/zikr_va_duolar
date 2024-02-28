@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+
+    .head-top {
+        justify-content: space-around;
+    }
+
+    .logo-a img {
+        display: none;
+    }
+
+    .dua {
+        width: 730px;
+    }
+}
+
