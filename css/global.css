@@ -169,8 +169,14 @@ img {
     margin-bottom: 30px;
     font-family: rubichka;
     background: rgb(170,87,255);
-    background: linear-gradient(220deg, rgba(170,87,255,1) 16%, rgba(4,0,255,1) 100%);
+    transition: all 0.5s ease-in-out;
     box-shadow: 0px 0px 10px 6px rgba(170,87,255,1),0px 0px 5px 6px rgba(4,0,255,1);
+    background: linear-gradient(220deg, rgba(170,87,255,1) 16%, rgba(4,0,255,1) 100%);
+}
+
+.dua:hover {
+    border-radius: 7.5px;
+    box-shadow: 0px 0px 10px 2px rgba(170,87,255,1);
 }
 
 .dua img {
@@ -215,9 +221,11 @@ img {
 }
 
 .numbers-zikr {
+    width: 100px;
     padding: 10px;
     color: #fff;
     font-size: 19px;
+    text-align: center;
     border-radius: 15px;
     border: 2px solid #fff;
     background-color: transparent;
@@ -283,4 +291,10 @@ img {
     padding-bottom: 20px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+}
+
+.endDua {
+    opacity: 80%;
+    user-select: none;
+    pointer-events: none;
 }

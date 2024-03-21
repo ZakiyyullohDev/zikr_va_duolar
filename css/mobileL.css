@@ -19,9 +19,9 @@
         width: 350px;
     }
 
-    .dua {
-        max-width: 380px;
-        height: 421px;
+    .dua-li .dua {
+        width: 400px;
+        /* height: 421px; */
     }
 
     .dua-text {
@@ -30,6 +30,7 @@
     
     .copy-dua {
         top: 370px;
+        width: 90px;
         right: 130px;
     }
 
