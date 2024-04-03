@@ -16,6 +16,11 @@
     src: url(../fonts/Noto_Naskh_Arabic/NotoNaskhArabic-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: arabicNumber;
+    src: url(../fonts/Number-font/AyatQuran9-6RYBv.ttf);
+}
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -221,22 +226,24 @@ img {
 }
 
 .numbers-zikr {
-    width: 100px;
-    padding: 10px;
+    /* width: 100px; */
+    /* padding: 10px; */
     color: #fff;
-    font-size: 19px;
+    font-size: 120px;
     text-align: center;
     border-radius: 15px;
-    border: 2px solid #fff;
+    line-height: 50px;
+    font-family: arabicNumber;
+    border: 0px solid #fff;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
 }
 
-.numbers-zikr:hover {
+/* .numbers-zikr:hover {
     color: blue;
     border-radius: 0;
     background-color: #fff;
-}
+} */
 
 .foot-top {
     margin: 0;
